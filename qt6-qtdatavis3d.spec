@@ -5,7 +5,7 @@
 %define _qtdir %{_libdir}/qt%{major}
 
 Name:		qt6-qtdatavis3d
-Version:	6.8.0
+Version:	6.8.1
 Release:	%{?beta:0.%{beta}.}%{?snapshot:0.%{snapshot}.}1
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtbase.git
@@ -40,7 +40,8 @@ Qt %{major} 3D data visualization module
 %{_qtdir}/qml/QtDataVisualization
 
 %global extra_devel_files_DataVisualizationQml \
-%{_qtdir}/lib/cmake/Qt6Qml/QmlPlugins/Qt6DataVisualizationQmlplugin*.cmake
+%{_qtdir}/lib/cmake/Qt6Qml/QmlPlugins/Qt6DataVisualizationQmlplugin*.cmake \
+%{_qtdir}/sbom/*
 
 %qt6libs DataVisualization DataVisualizationQml
 
