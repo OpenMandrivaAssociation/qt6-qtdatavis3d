@@ -21,6 +21,7 @@ BuildRequires:	cmake(Qt%{major}Core)
 BuildRequires:	cmake(Qt%{major}DBus)
 BuildRequires:	cmake(Qt%{major}Qml)
 BuildRequires:	cmake(Qt%{major}Gui)
+BuildRequires:	cmake(Qt%{major}GuiTools)
 BuildRequires:	cmake(Qt%{major}Widgets)
 BuildRequires:	cmake(Qt%{major}OpenGL)
 BuildRequires:	cmake(Qt%{major}OpenGLWidgets)
@@ -30,6 +31,7 @@ BuildRequires:	cmake(Qt%{major}QuickTest)
 BuildRequires:	cmake(Qt%{major}Test)
 BuildRequires:	cmake(Qt%{major}Qml)
 BuildRequires:	cmake(Qt%{major}Qml)
+BuildRequires:	pkgconfig(opengl)
 BuildRequires:	qt%{major}-cmake
 License:	LGPLv3/GPLv3/GPLv2
 
